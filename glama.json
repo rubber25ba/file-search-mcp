@@ -1,0 +1,18 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "rubber25ba"
+  ],
+  "name": "File Search MCP",
+  "description": "本地文件内容搜索 MCP Server，递归搜索目录中匹配关键词的文件。智能跳过二进制文件和无关目录。",
+  "tools": [
+    {"name": "search_files", "description": "关键词递归搜索文件内容，返回匹配路径和行号"},
+    {"name": "list_directory", "description": "列出目录中的文件和子目录，支持 glob 过滤"}
+  ],
+  "resources": [
+    {"name": "search-stats", "description": "搜索统计和历史记录"},
+    {"name": "config-settings", "description": "当前配置：扩展名白名单、跳过目录等"}
+  ],
+  "transport": "stdio",
+  "tags": ["file-search", "filesystem", "search", "productivity"]
+}
